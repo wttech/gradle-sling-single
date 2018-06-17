@@ -9,8 +9,8 @@ pluginManagement {
     }
     resolutionStrategy {
         eachPlugin {
-            if (requested.id.namespace == 'com.cognifide.aem') {
-                useModule('com.cognifide.gradle:aem-plugin:4.0.3')
+            if (requested.id.namespace == 'com.cognifide.sling') {
+                useModule('com.cognifide.gradle:sling-plugin:1.0.0')
             } else if (requested.id.id == 'com.neva.fork') {
                 useModule('com.neva.gradle:fork-plugin:1.0.5')
             }
