@@ -17,3 +17,14 @@
 This project could be used to start developing **application** based on Sling.
 
 Documentation for Sling plugin is available in project [Gradle Sling Plugin](https://github.com/Cognifide/gradle-sling-plugin).
+
+
+## Setup
+
+Specify user specific configuration by running command:
+
+`gradlew props`
+
+Setup local Sling instances and deploy application by running command:
+
+`gradlew slingSetup -i`
