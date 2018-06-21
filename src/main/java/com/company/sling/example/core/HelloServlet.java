@@ -1,6 +1,5 @@
 package com.company.sling.example.core;
 
-import com.day.cq.wcm.api.NameConstants;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.net.MediaType;
 import com.google.gson.Gson;
@@ -14,14 +13,14 @@ import org.apache.sling.api.servlets.SlingAllMethodsServlet;
 import org.osgi.service.component.annotations.Component;
 
 /**
- * @link http://[host]:[port]/content/we-retail/us/en.hello.json
+ * @link http://[host]:[port]/content/example.hello.json
  */
 @Component(
   service = Servlet.class,
   property = {
     "sling.servlet.extensions=json",
     "sling.servlet.selectors=hello",
-    "sling.servlet.resourceTypes=" + NameConstants.NT_PAGE
+    "sling.servlet.resourceTypes=example/hello"
   }
 )
 public class HelloServlet extends SlingAllMethodsServlet {
