@@ -18,13 +18,21 @@ This project could be used to start developing **application** based on Sling bu
 
 Documentation for Sling plugin is available in project [Gradle Sling Plugin](https://github.com/Cognifide/gradle-sling-plugin).
 
+## Quickstart
 
-## Setup
+1. Fork this example using command:
 
-Specify user specific configuration by running command:
+    `git clone https://github.com/Cognifide/gradle-sling-single.git && sh gradlew fork`
 
-`gradlew props`
+2. Enter forked directory.
+3. Specify user specific configuration by running command:
 
-Setup local Sling instances and deploy application by running command:
+    `sh gradlew props`
 
-`gradlew slingSetup -i`
+4. Setup local instance and deploy application by running command:
+
+    `sh gradlew slingSetup`
+
+5. Develop continuosly using command:
+
+    `sh gradlew` (optionally with `-i -S`)
