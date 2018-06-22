@@ -14,7 +14,7 @@
 
 ## Description
 
-This project could be used to start developing **application** based on Sling.
+This project could be used to start developing **application** based on Sling built by **Gradle**.
 
 Documentation for Sling plugin is available in project [Gradle Sling Plugin](https://github.com/Cognifide/gradle-sling-plugin).
 
