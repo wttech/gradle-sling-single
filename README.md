@@ -22,7 +22,7 @@ Documentation for Sling plugin is available in project [Gradle Sling Plugin](htt
 
 1. Fork this example using command:
 
-    `git clone https://github.com/Cognifide/gradle-sling-single.git && sh gradlew fork`
+    `git clone https://github.com/Cognifide/gradle-sling-single.git && cd gradle-sling-single && sh gradlew fork`
 
 2. Enter forked directory.
 3. Specify user specific configuration by running command:
