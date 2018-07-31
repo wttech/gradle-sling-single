@@ -24,12 +24,14 @@ Documentation for Sling plugin is available in project [Gradle Sling Plugin](htt
 
     `git clone https://github.com/Cognifide/gradle-sling-single.git && cd gradle-sling-single && gradlew fork`
 
-    ![Fork properties](docs/quickstart-fork-props.png)
+    ![Fork dialog](docs/quickstart-fork-dialog.png)
 
 2. Enter forked directory.
 3. Specify user specific configuration by running command:
 
     `gradlew props`
+    
+    ![Properties dialog](docs/quickstart-props-dialog.png)
 
 4. Setup local instance and deploy application by running command:
 
