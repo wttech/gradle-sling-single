@@ -33,6 +33,10 @@ Documentation for Sling plugin is available in project [Gradle Sling Plugin](htt
 
     `sh gradlew slingSetup`
 
-5. Develop continuosly using command:
+5. Develop continuously using command:
 
     `sh gradlew` (optionally with `-i -S`)
+    
+6. Reset local instance to initial state by running command (only if needed):
+
+    `sh gradlew slingResetup -Psling.force`
