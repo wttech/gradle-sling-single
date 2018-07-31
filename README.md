@@ -22,21 +22,23 @@ Documentation for Sling plugin is available in project [Gradle Sling Plugin](htt
 
 1. Fork this example using command:
 
-    `git clone https://github.com/Cognifide/gradle-sling-single.git && cd gradle-sling-single && sh gradlew fork`
+    `git clone https://github.com/Cognifide/gradle-sling-single.git && cd gradle-sling-single && gradlew fork`
+
+    ![Fork properties](docs/quickstart-fork-props.png)
 
 2. Enter forked directory.
 3. Specify user specific configuration by running command:
 
-    `sh gradlew props`
+    `gradlew props`
 
 4. Setup local instance and deploy application by running command:
 
-    `sh gradlew slingSetup`
+    `gradlew slingSetup`
 
 5. Develop continuously using command:
 
-    `sh gradlew` (optionally with `-i -S`)
+    `gradlew` (optionally with `-i -S`)
     
 6. Reset local instance to initial state by running command (only if needed):
 
-    `sh gradlew slingResetup -Psling.force`
+    `gradlew slingResetup -Psling.force`
