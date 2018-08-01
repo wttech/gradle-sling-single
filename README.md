@@ -7,10 +7,9 @@
 
 <br>
 <p align="center">
-  <img src="docs/sling-logo.png" alt="Sling Logo"/>
+  <img src="docs/gsp-logo.png" alt="Logo"/>
 </p>
 <br>
-
 
 ## Description
 
