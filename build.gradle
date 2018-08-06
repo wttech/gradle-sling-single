@@ -17,6 +17,7 @@ repositories {
 sling {
     config {
         bundlePackage = 'com.company.sling.example.core'
+		createFilesExpanded = ["**/sling.properties", "**/*.sh", "**/*.bat", "**/start", "**/stop"]
     }
 
     bundle {
