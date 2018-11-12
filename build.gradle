@@ -2,17 +2,20 @@ plugins {
     id 'com.cognifide.sling.bundle'
     id 'com.cognifide.sling.instance'
     id 'com.neva.fork'
+    id 'maven-publish'
 }
 description = 'Example'
-defaultTasks = [':slingSatisfy', ':slingDeploy', ':slingAwait']
+defaultTasks = [':slingSatisfy', ':slingDeploy', ':slingAwait', ':publishToMavenLocal']
 
 group = 'com.company.sling'
 version = '1.0.0-SNAPSHOT'
 
 repositories {
+    mavenLocal()
     jcenter()
     maven { url  "https://dl.bintray.com/neva-dev/maven-public" }
 }
+
 
 sling {
     config {
@@ -26,8 +29,6 @@ sling {
         attribute 'Bundle-Vendor', 'Company'
     }
 }
-
-
 
 dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.12'
@@ -43,6 +44,14 @@ dependencies {
     compileOnly group: 'com.google.code.gson', name: 'gson', version: '2.3'
     compileOnly group: 'com.google.guava', name: 'guava', version: '15.0'
     compileOnly group: 'joda-time', name: 'joda-time', version: '2.9.1'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 }
 
 fork {

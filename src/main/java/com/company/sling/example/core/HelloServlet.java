@@ -5,7 +5,6 @@ import com.google.common.net.MediaType;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.io.IOException;
-import java.util.Map;
 import javax.servlet.Servlet;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
@@ -32,10 +31,16 @@ public class HelloServlet extends SlingAllMethodsServlet {
   @Override
   protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response)
     throws IOException {
-    Map<String, String> result = ImmutableMap.of("message", "Hello World!");
+    respond(response, "Hello world!");
+  }
 
+  private void respond(SlingHttpServletResponse response, String result) throws IOException {
+    respond(response, ImmutableMap.of("result", result));
+  }
+
+  private void respond(SlingHttpServletResponse response, Object object) throws IOException {
     response.setContentType(MediaType.JSON_UTF_8.toString());
-    response.getWriter().write(GSON.toJson(result));
+    response.getWriter().write(GSON.toJson(object));
   }
 
 }
