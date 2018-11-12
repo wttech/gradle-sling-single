@@ -26,13 +26,6 @@ sling {
     }
 }
 
-slingSatisfy {
-    packages {
-        url 'https://github.com/neva-dev/felix-search-webconsole-plugin/releases/download/search-webconsole-plugin-1.2.0/search-webconsole-plugin-1.2.0.jar'
-        // dependency 'com.neva.felix:search-webconsole-plugin:1.2.0'
-    }
-}
-
 dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.12'
 
