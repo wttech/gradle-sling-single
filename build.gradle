@@ -19,8 +19,6 @@ sling {
         bundlePackage = 'com.company.sling.example.core'
 		createFilesExpanded = ["**/sling.properties", "**/*.sh", "**/*.bat", "**/start", "**/stop"]
         awaitHealthCheck = { true }
-        uploadRetryDelay = props.long("sling.upload.retry.delay", 10000)
-        installRetryDelay = props.long("sling.install.retry.delay", 10000)
     }
 
     bundle {
