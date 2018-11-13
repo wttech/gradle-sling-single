@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-Content-Package-Roots: /content/example,/apps/example
-Content-Package-Type: mixed
-Content-Package-Id: com.company.sling:example:1.0.0-SNAPSHOT
-
