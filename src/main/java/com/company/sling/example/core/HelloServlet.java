@@ -31,7 +31,13 @@ public class HelloServlet extends SlingAllMethodsServlet {
   @Override
   protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response)
     throws IOException {
-    respond(response, "Hello world!");
+	final String text = request.getParameter("text");
+	if (text == null || text.isEmpty()) {
+		respond(response, "Text cannot be empty!");
+		return;
+	}
+		
+    respond(response, text);
   }
 
   private void respond(SlingHttpServletResponse response, String result) throws IOException {
