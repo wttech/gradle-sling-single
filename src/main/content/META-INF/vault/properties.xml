@@ -2,12 +2,12 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
     <comment>FileVault Package Properties</comment>
-    <entry key="group">com.company.sling</entry>
-    <entry key="name">example</entry>
-    <entry key="version">1.0.0-SNAPSHOT</entry>
-    <entry key="createdBy">admin</entry>
+    <entry key="group">{{project.group}}</entry>
+    <entry key="name">{{config.packageName}}</entry>
+    <entry key="version">{{project.version}}</entry>
+    <entry key="description">{{project.description}}</entry>
+    <entry key="createdBy">{{user.name}}</entry>
     <entry key="packageType">mixed</entry>
-    <entry key="dependencies"/>
     <entry key="buildCount">1</entry>
     <entry key="packageFormatVersion">2</entry>
 </properties>
