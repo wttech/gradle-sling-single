@@ -43,7 +43,7 @@ configure<ForkExtension> {
                 },
                 "localInstanceStarterJarUri" to {
                     label = "Starter URI"
-                    description = "For file named 'org.apache.sling.starter-xx.jar'"
+                    description = "Dependency notation or URL to JAR (e.g Sling Starter or Composum Pages Starter)"
                     text("org.apache.sling:org.apache.sling.starter:11")
                 },
                 "localInstanceBackupDownloadUri" to {
