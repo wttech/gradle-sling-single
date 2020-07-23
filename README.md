@@ -25,6 +25,8 @@ Documentation for Sling plugin is available in project [Gradle Sling Plugin](htt
 
 ## Quickstart
 
+> :warning: **All-in-one command**: `git clone git@github.com:Cognifide/gradle-sling-single.git && cd gradle-sling-single && sh gradlew props -Pverbose && sh gradlew up`
+
 1. Fork project using command:
 
     ```bash
