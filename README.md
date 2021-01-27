@@ -1,9 +1,9 @@
-![Cognifide logo](docs/cognifide-logo.png)
+![WTT logo](docs/wtt-logo.png)
 
 [![Gradle Status](https://gradleupdate.appspot.com/Cognifide/gradle-sling-single/status.svg)](https://gradleupdate.appspot.com/Cognifide/gradle-sling-single/status)
-[![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/Cognifide/gradle-sling-single.svg?label=License)](http://www.apache.org/licenses/)
+[![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/wttech/gradle-sling-single.svg?label=License)](http://www.apache.org/licenses/)
 
-[![Gradle Sling Plugin logo](docs/logo.png)](https://github.com/Cognifide/gradle-sling-plugin)
+[![Gradle Sling Plugin logo](docs/logo.png)](https://github.com/wttech/gradle-sling-plugin)
 
 # Sling Single-Project Example
 
@@ -11,7 +11,7 @@
 
 This project could be used to start developing **application/library** based on Sling Framework.
 
-Documentation for Sling plugin is available in project [Gradle Sling Plugin](https://github.com/Cognifide/gradle-sling-plugin).
+Documentation for Sling plugin is available in project [Gradle Sling Plugin](https://github.com/wttech/gradle-sling-plugin).
 
 ## Table of Contents
 
@@ -25,12 +25,12 @@ Documentation for Sling plugin is available in project [Gradle Sling Plugin](htt
 
 ## Quickstart
 
-> :information_source: **Shorthand for running Sling without forking:** `git clone git@github.com:Cognifide/gradle-sling-single.git && cd gradle-sling-single && sh gradlew props -Pfork.verbose && sh gradlew setup`
+> :information_source: **Shorthand for running Sling without forking:** `git clone git@github.com:wttech/gradle-sling-single.git && cd gradle-sling-single && sh gradlew props -Pfork.verbose && sh gradlew setup`
 
 1. Fork project using command:
 
     ```bash
-    git clone https://github.com/Cognifide/gradle-sling-single.git && cd gradle-sling-single && sh gradlew fork
+    git clone https://github.com/wttech/gradle-sling-single.git && cd gradle-sling-single && sh gradlew fork
     ```
 
     and specify properties:
